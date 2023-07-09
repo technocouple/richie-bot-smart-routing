@@ -1,0 +1,27 @@
+With the below QUEUE_DESCRIPTION:
+Q1_GB_CHAT: Agents belonging to this queue, can help with general banking queries like account information, online bank, branch address, contact number only. And this agent can speak english, spanish.
+Q1_GB_CHAT_ESP: Agents belonging to this queue, can help with general banking queries like account information, online bank, branch address, contact number only. And this agent can speak only spanish.
+Q2_HL_CHAT_ENG: Agents belonging to this queue can help with mortgage loans, home loans, home loan eligibility, applying home loan online, branch details which can help with home loans. The agent belonging to this queue can only speak english.
+Q3_CC_CHAT: Agent belonging to this queue can help anything related to credit card and can speak both english and spanish.
+Q4_FR_CHAT: Agent belonging to this queue helps with fraudulent activity on credit card, debit card, cyber security related.
+
+Select the best queue for the customer based on the below CHAT_SUMMARY:
+
+CHAT_SUMMARY:
+user,I want help with credit car, bot, Sure, I can help you with that. Can I have your registered phone number? user, 9090123321, bot, Thank you. And what is your credit card number?, user, 909089, bot, Thank you. And what is the issue you are facing? user, I received the statement yesterday, and i cant know for sure some of the transactions, some may be fraudulent not sure. 
+
+The JSON object returned should be in this format without deviation:
+{
+    "queueName":"String"
+}
+    
+Do not include any explanations, only provide a  RFC8259 compliant JSON response."
+
+Summarise:
+Summarise the following [chat interaction] between user and virtual agent. Summary should contain all the key-points, highlights, follow up, Intent description.
+chat interaction:
+"User: Hi
+BOT: Hello, how can I help you today?
+User: I am buying a new apartment and running short of funds from my savings. I need to check if you can help me apply loan and check if at all am eligible.
+Bot: sure, What is your registered mobile number?
+Bot: Please hold on while I transfer to a live agent who can help you further."

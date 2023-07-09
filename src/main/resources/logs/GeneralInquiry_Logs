@@ -1,0 +1,97 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.9)
+
+13:20:40.898 [main] INFO  c.t.c.CakeAssistantApplication Starting CakeAssistantApplication using Java 11.0.13 on Shivaprasads-MacBook-Pro.local with PID 39088 (/Users/satpra/Documents/Projects/CakeAssistant/cake_assistant/target/classes started by satpra in /Users/satpra/Documents/Projects/CakeAssistant/cake_assistant)
+13:20:40.984 [main] INFO  c.t.c.CakeAssistantApplication No active profile set, falling back to 1 default profile: "default"
+13:20:42.526 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:20:42.562 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 26 ms. Found 0 JPA repository interfaces.
+13:20:43.581 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+13:20:43.601 [main] INFO  o.a.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+13:20:43.603 [main] INFO  o.a.catalina.core.StandardService Starting service [Tomcat]
+13:20:43.603 [main] INFO  o.a.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.71]
+13:20:43.911 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+13:20:43.911 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2811 ms
+13:20:44.234 [main] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+13:20:44.474 [main] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+13:20:44.659 [main] INFO  o.h.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+13:20:44.710 [main] INFO  org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.15.Final
+13:20:44.899 [main] INFO  o.h.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+13:20:45.056 [main] INFO  org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+13:20:45.295 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:20:45.322 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:20:45.475 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:20:46.199 [main] INFO  o.a.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+13:20:46.233 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+13:20:46.255 [main] INFO  c.t.c.CakeAssistantApplication Started CakeAssistantApplication in 6.477 seconds (JVM running for 7.45)
+14:09:52.690 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:09:52.691 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+14:09:52.714 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet Completed initialization in 23 ms
+14:09:52.948 [http-nio-8080-exec-1] INFO  c.t.c.c.GoogleGenerativeAIController Request Received for Identifying Intent With User Utterance :: Hi, I want help with my home loan. 
+
+14:09:56.693 [http-nio-8080-exec-1] INFO  c.t.c.u.GoogleGenerativeAIUtility TEXT-BISON AI RESPONSE :: home_loan
+14:10:23.523 [http-nio-8080-exec-2] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: can you help me in travelling to Mars planet with Elon?, BOT TEXT :: null. 
+
+14:10:23.523 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: can you help me in travelling to Mars planet with Elon?
+14:10:25.751 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: UNRELATED
+14:10:25.751 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: UNRELATED
+14:10:26.099 [http-nio-8080-exec-4] INFO  c.t.c.c.GoogleGenerativeAIController Request Received to Identify RIGHT QUEUE for the given Interaction Summary and User Needs. 
+
+14:10:26.100 [http-nio-8080-exec-4] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT SUMMARIZATION :: 
+14:10:27.496 [http-nio-8080-exec-4] INFO  c.t.c.u.GoogleGenerativeAIUtility QUEUE IDENTIFIED FROM AI AS :: Q1_GB_CHAT
+14:11:14.581 [http-nio-8080-exec-5] INFO  c.t.c.c.GoogleGenerativeAIController Request Received for Identifying Intent With User Utterance :: Hi, I need help with home loan. 
+
+14:11:17.364 [http-nio-8080-exec-5] INFO  c.t.c.u.GoogleGenerativeAIUtility TEXT-BISON AI RESPONSE :: home_loan
+14:11:32.427 [http-nio-8080-exec-8] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: I want to apply for new loan to buy a house , BOT TEXT :: null. 
+
+14:11:32.427 [http-nio-8080-exec-8] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: I want to apply for new loan to buy a house 
+14:11:34.869 [http-nio-8080-exec-8] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: Sure, I can help you with that. Can I have your registered mobile number?
+14:11:34.870 [http-nio-8080-exec-8] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: Sure, I can help you with that. Can I have your registered mobile number?
+14:11:43.636 [http-nio-8080-exec-9] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: 6786789009, BOT TEXT :: Sure, I can help you with that. Can I have your registered mobile number?. 
+
+14:11:43.636 [http-nio-8080-exec-9] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: 6786789009
+14:11:45.805 [http-nio-8080-exec-9] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: Thank you. And what is your actual issue?
+14:11:45.805 [http-nio-8080-exec-9] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: Thank you. And what is your actual issue?
+14:12:16.836 [http-nio-8080-exec-10] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: issue is I want to buy a new home, i dont have enough funds, so I want to apply for a loan to buy this home soon, BOT TEXT :: Thank you. And what is your actual issue?. 
+
+14:12:16.837 [http-nio-8080-exec-10] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: issue is I want to buy a new home, i dont have enough funds, so I want to apply for a loan to buy this home soon
+14:12:19.090 [http-nio-8080-exec-10] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: ALL_INFO_COLLECTED
+14:12:19.091 [http-nio-8080-exec-10] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: ALL_INFO_COLLECTED
+14:12:19.726 [http-nio-8080-exec-2] INFO  c.t.c.c.GoogleGenerativeAIController Request Received to Identify RIGHT QUEUE for the given Interaction Summary and User Needs. 
+
+14:12:19.726 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT SUMMARIZATION ::  user , can you help me in travelling to Mars planet with Elon?  bot , null  user , I want to apply for new loan to buy a house   bot , Sure, I can help you with that. Can I have your registered mobile number?  user , 6786789009  bot , Thank you. And what is your actual issue?  user , issue is I want to buy a new home, i dont have enough funds, so I want to apply for a loan to buy this home soon 
+14:12:20.674 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility QUEUE IDENTIFIED FROM AI AS :: Q2_HL_CHAT_ENG
+14:13:24.384 [http-nio-8080-exec-7] INFO  c.t.c.c.GoogleGenerativeAIController Request Received for Identifying Intent With User Utterance :: Hi, I see on my credit card statements there are some fradulent activities or i dont understand those chanrges. can you look into it. 
+
+14:13:26.999 [http-nio-8080-exec-7] INFO  c.t.c.u.GoogleGenerativeAIUtility TEXT-BISON AI RESPONSE :: credit_card
+14:13:50.490 [http-nio-8080-exec-8] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: I want to ensure some of the charges or transactions looks fishy.. , BOT TEXT :: null. 
+
+14:13:50.490 [http-nio-8080-exec-8] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: I want to ensure some of the charges or transactions looks fishy.. 
+14:13:52.906 [http-nio-8080-exec-8] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: Sure, I can help you with that. Can I have your registered phone number?
+14:13:52.906 [http-nio-8080-exec-8] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: Sure, I can help you with that. Can I have your registered phone number?
+14:14:06.322 [http-nio-8080-exec-9] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: 9090345678, BOT TEXT :: Sure, I can help you with that. Can I have your registered phone number?. 
+
+14:14:06.322 [http-nio-8080-exec-9] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: 9090345678
+14:14:08.533 [http-nio-8080-exec-9] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: Thank you. And what is your credit card number?
+14:14:08.534 [http-nio-8080-exec-9] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: Thank you. And what is your credit card number?
+14:14:22.613 [http-nio-8080-exec-1] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: 4387100020003000, BOT TEXT :: Thank you. And what is your credit card number?. 
+
+14:14:22.614 [http-nio-8080-exec-1] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: 4387100020003000
+14:14:25.265 [http-nio-8080-exec-1] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: Thank you. And what is the issue?
+14:14:25.265 [http-nio-8080-exec-1] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: Thank you. And what is the issue?
+14:14:52.721 [http-nio-8080-exec-2] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: I see lot of fishy trasnactions for lower amount but i dont recall using those.. could be fraud?, BOT TEXT :: Thank you. And what is the issue?. 
+
+14:14:52.722 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: I see lot of fishy trasnactions for lower amount but i dont recall using those.. could be fraud?
+14:14:55.051 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: ALL_INFO_COLLECTED
+14:14:55.051 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: ALL_INFO_COLLECTED
+14:14:55.681 [http-nio-8080-exec-3] INFO  c.t.c.c.GoogleGenerativeAIController Request Received to Identify RIGHT QUEUE for the given Interaction Summary and User Needs. 
+
+14:14:55.683 [http-nio-8080-exec-3] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT SUMMARIZATION ::  user , can you help me in travelling to Mars planet with Elon?  bot , null  user , I want to apply for new loan to buy a house   bot , Sure, I can help you with that. Can I have your registered mobile number?  user , 6786789009  bot , Thank you. And what is your actual issue?  user , I want to ensure some of the charges or transactions looks fishy..   user , I want to ensure some of the charges or transactions looks fishy..   bot , Sure, I can help you with that. Can I have your registered phone number?  user , 9090345678  bot , Thank you. And what is your credit card number?  user , 4387100020003000  bot , Thank you. And what is the issue?  user , I see lot of fishy trasnactions for lower amount but i dont recall using those.. could be fraud? 
+14:14:56.800 [http-nio-8080-exec-3] INFO  c.t.c.u.GoogleGenerativeAIUtility QUEUE IDENTIFIED FROM AI AS :: Q4_FR_CHAT
+
+

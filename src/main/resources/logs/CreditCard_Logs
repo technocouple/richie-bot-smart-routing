@@ -1,0 +1,30 @@
+13:13:22.129 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:13:22.131 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+13:13:22.159 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet Completed initialization in 28 ms
+13:13:22.388 [http-nio-8080-exec-1] INFO  c.t.c.c.GoogleGenerativeAIController Request Received for Identifying Intent With User Utterance :: Hi, I want help with my credit card. 
+
+13:13:25.743 [http-nio-8080-exec-1] INFO  c.t.c.u.GoogleGenerativeAIUtility TEXT-BISON AI RESPONSE :: credit_card
+13:14:23.960 [http-nio-8080-exec-2] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: I received a credit card statement yesterday for last month, but i see lot of new charges which i dont recall or uderstand. If someone can help me walk through this will be of great help., BOT TEXT :: null. 
+
+13:14:23.961 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: I received a credit card statement yesterday for last month, but i see lot of new charges which i dont recall or uderstand. If someone can help me walk through this will be of great help.
+13:14:26.411 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: I understand that you are having trouble with your credit card statement. I would be happy to help you. Can I have your registered phone number?
+13:14:26.411 [http-nio-8080-exec-2] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: I understand that you are having trouble with your credit card statement. I would be happy to help you. Can I have your registered phone number?
+13:14:43.905 [http-nio-8080-exec-4] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: 9009001001, BOT TEXT :: I understand that you are having trouble with your credit card statement. I would be happy to help you. Can I have your registered phone number?. 
+
+13:14:43.905 [http-nio-8080-exec-4] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: 9009001001
+13:14:46.563 [http-nio-8080-exec-4] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: Thank you for providing your registered phone number. Can I have your credit card number?
+13:14:46.563 [http-nio-8080-exec-4] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: Thank you for providing your registered phone number. Can I have your credit card number?
+13:14:59.609 [http-nio-8080-exec-5] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: 4386100020003000, BOT TEXT :: Thank you for providing your registered phone number. Can I have your credit card number?. 
+
+13:14:59.609 [http-nio-8080-exec-5] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: 4386100020003000
+13:15:02.043 [http-nio-8080-exec-5] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: Thank you for providing your credit card number. I see that you have a credit card with us ending in 3000. Can you please confirm the actual issue that you are facing?
+13:15:02.044 [http-nio-8080-exec-5] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: Thank you for providing your credit card number. I see that you have a credit card with us ending in 3000. Can you please confirm the actual issue that you are facing?
+13:15:40.125 [http-nio-8080-exec-7] INFO  c.t.c.c.GoogleGenerativeAIController Chat Request : USER TEXT :: I want someone to make me understand the new charges on my credit card statement. there are so many things which i dont understand, BOT TEXT :: Thank you for providing your credit card number. I see that you have a credit card with us ending in 3000. Can you please confirm the actual issue that you are facing?. 
+
+13:15:40.125 [http-nio-8080-exec-7] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON REQUEST FOR NEXT BEST ACTION WITH INPUT'S: USER-TEXT :: I want someone to make me understand the new charges on my credit card statement. there are so many things which i dont understand
+13:15:42.404 [http-nio-8080-exec-7] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT BISON AI RESPONSE :: ALL_INFO_COLLECTED
+13:15:42.404 [http-nio-8080-exec-7] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT-BISON RESPONSE THE NEXT BEST ACTION (BOT TEXT) :: ALL_INFO_COLLECTED
+13:15:42.924 [http-nio-8080-exec-8] INFO  c.t.c.c.GoogleGenerativeAIController Request Received to Identify RIGHT QUEUE for the given Interaction Summary and User Needs. 
+
+13:15:42.925 [http-nio-8080-exec-8] INFO  c.t.c.u.GoogleGenerativeAIUtility CHAT SUMMARIZATION ::  user , I received a credit card statement yesterday for last month, but i see lot of new charges which i dont recall or uderstand. If someone can help me walk through this will be of great help.  bot , I understand that you are having trouble with your credit card statement. I would be happy to help you. Can I have your registered phone number?  user , 9009001001  bot , Thank you for providing your registered phone number. Can I have your credit card number?  user , 4386100020003000  bot , Thank you for providing your credit card number. I see that you have a credit card with us ending in 3000. Can you please confirm the actual issue that you are facing?  user , I want someone to make me understand the new charges on my credit card statement. there are so many things which i dont understand 
+13:15:44.107 [http-nio-8080-exec-8] INFO  c.t.c.u.GoogleGenerativeAIUtility QUEUE IDENTIFIED FROM AI AS :: Q3_CC_CHAT
